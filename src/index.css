@@ -105,3 +105,53 @@ button:hover {
 .addClient{
   margin-top: 20px;
 }
+
+.modal{
+  background-color: #cccccc69;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-modal{
+  background-color: white;
+  max-width: 400px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px gray;
+}
+
+.header-form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-close{
+  background-color:rgb(223, 223, 223);
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+
+.btn-close:hover{
+  background-color:rgb(170, 170, 170);
+  color: black;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form > div{
+  margin-top: 5px;
+}
+
