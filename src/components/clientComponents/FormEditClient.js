@@ -1,8 +1,8 @@
 
-function FormAddClient() {
+function FormEditClient() {
   return (<div>
     <div className="header-form">
-      <h3>Novo Cliente:</h3>
+      <h3>Editar Cliente:</h3>
       <button className="btn-close">X</button>
     </div>
     <form>
@@ -15,11 +15,11 @@ function FormAddClient() {
         <input type="text" name="name" required></input>
       </div>
       <div>
-        <button>Criar</button>
+        <button>Editar</button>
       </div>
 
     </form>
   </div>)
 }
 
-export default FormAddClient;
+export default FormEditClient;
