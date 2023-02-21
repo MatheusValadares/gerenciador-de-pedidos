@@ -38,8 +38,8 @@ function Clientcontent() {
                 <td>{linha.numeroConta}</td>
                 <td>{linha.nome}</td>
                 <td>
-                  <button >Editar</button>
-                  <button >Excluir</button>
+                  <button className="btn-edit">Editar</button>
+                  <button className="btn-delete">Excluir</button>
                 </td>
               </tr>
             ))}
