@@ -1,5 +1,10 @@
+import React, { useContext } from "react";
+import { ClientContext } from "./ClientContext";
 
 function TableClients() {
+
+  const { setShowEdit } = useContext(ClientContext);
+  const { setShowDelete } = useContext(ClientContext);
 
   let dados = [
     { numeroConta: 50, nome: "teste" },
@@ -35,8 +40,8 @@ function TableClients() {
             <td>{linha.numeroConta}</td>
             <td>{linha.nome}</td>
             <td>
-              <button className="btn-edit">Editar</button>
-              <button className="btn-delete">Excluir</button>
+              <button className="btn-edit" onClick={() => { setShowEdit(true) }}>Editar</button>
+              <button className="btn-delete" onClick={() => { setShowDelete(true) }}>Excluir</button>
             </td>
           </tr>
         ))}

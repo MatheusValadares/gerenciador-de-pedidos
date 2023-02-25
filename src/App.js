@@ -1,12 +1,15 @@
 import './App.css';
 import Header from './components/layout/Header';
 import Clientcontent from "./components/contents/Clientcontent";
+import { ClientProvider } from './components/clientComponents/ClientContext';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Clientcontent></Clientcontent>
+      <ClientProvider>
+        <Clientcontent></Clientcontent>
+      </ClientProvider>
     </div>
   );
 }

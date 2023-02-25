@@ -1,9 +1,14 @@
+import React, { useContext } from "react";
+import { ClientContext } from "./ClientContext";
 
 function FormAddClient() {
+
+  const { setShowAdd } = useContext(ClientContext);
+
   return (<div>
     <div className="header-form">
       <h3>Novo Cliente:</h3>
-      <button className="btn-close">X</button>
+      <button className="btn-close" onClick={() => { setShowAdd(false) }}>X</button>
     </div>
     <form>
       <div>

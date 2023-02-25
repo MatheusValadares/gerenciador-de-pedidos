@@ -3,7 +3,7 @@ import CardModal from "./CardModal";
 
 function Modal(props) {
 
-  return (<div className="modal">
+  return (<div className={props.show ? "modal" : "hide"}>
     <CardModal>{props.children}</CardModal>
   </div>)
 }
