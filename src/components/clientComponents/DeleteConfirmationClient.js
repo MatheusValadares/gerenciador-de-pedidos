@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ClientContext } from "./ClientContext";
 
-function DeleteConfitmation() {
+function DeleteConfitmationClient() {
 
   const { setShowDelete } = useContext(ClientContext);
 
@@ -12,4 +12,4 @@ function DeleteConfitmation() {
   </div>)
 }
 
-export default DeleteConfitmation;
+export default DeleteConfitmationClient;
