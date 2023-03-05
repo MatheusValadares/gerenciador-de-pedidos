@@ -1,22 +1,16 @@
 import './App.css';
 import Header from './components/layout/Header';
-import ClientContent from "./components/contents/ClientContent";
-import { ClientProvider } from './components/clientComponents/ClientContext';
-import ProductContent from './components/contents/ProductContent';
-import { ProductProvider } from './components/productsComponents/ProductContext';
+import Content from './components/contentsComponents/Content';
+import { LayoutProvider } from './components/LayoutContext';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
 
-      {/* <ClientProvider>
-        <ClientContent></ClientContent>
-      </ClientProvider> */}
-
-      <ProductProvider>
-        <ProductContent></ProductContent>
-      </ProductProvider>
+      <LayoutProvider>
+        <Header></Header>
+        <Content></Content>
+      </LayoutProvider>
 
 
     </div>

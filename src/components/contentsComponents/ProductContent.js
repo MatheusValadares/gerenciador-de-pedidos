@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import FormAddProduct from "../productsComponents/FormAddProduct";
-import TableProducts from "../productsComponents/TableProducts";
+import FormAddProduct from "../productComponents/FormAddProduct";
+import TableProducts from "../productComponents/TableProducts";
 import Modal from "../layout/Modal";
-import FormEditProduct from "../productsComponents/FormEditProduct";
-import DeleteConfirmationProduct from "../productsComponents/DeleteConfirmationProduct";
-import { ProductContext } from '../productsComponents/ProductContext';
+import FormEditProduct from "../productComponents/FormEditProduct";
+import DeleteConfirmationProduct from "../productComponents/DeleteConfirmationProduct";
+import { ProductContext } from '../productComponents/ProductContext';
 
 function ProductsContent(props) {
 
